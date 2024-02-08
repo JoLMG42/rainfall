@@ -29,6 +29,15 @@ Le but ici va etre de faire un buffer overflow grace a gets pour modifier le reg
 
 Pour ce faire la theorie n'est pas tres complique, voici un magnifique schema explicatif
 
+![Tout va bien tu ecrit dans la stack](overflow1.png)
+
+En temps normal tu descend ton pointeur `esp` suffisament pour que tout tes caracteres rentre dans la stack, sauf que gets ne verifie pas si tu ecris plus que prevu, donc tu peux continuer a ecrire
+
+![C'est les problemes](overflow2.png)
+
+De cette facon en continuant a ecrire tu peux remonter jusq'au contenue de `eip`, la prochaine instruction pour la remplacer.
+
+
 
 
 > ### NEXT : [Level 2](/level2/resources/README.md)
