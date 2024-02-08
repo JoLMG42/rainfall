@@ -89,8 +89,17 @@ Et si la comparaison est egale utiliser `execve` pour lancer qeulquechose
 ```
 
 > En regardant la valeur de `0x80c5348` qui est passe en argument a `execve` on remarque que c'est un pointeur poitant sur la string `/bin/sh`
-> ```
-> (gdb) x/s 0x80c53480x80c5348:	 "/bin/sh"
-> ```
+> (gdb) x/s 0x80c5348
+> 0x80c5348:	 "/bin/sh"
+
+On comprend que atoi prend en argument ce qu'on envoie a la fonction donc on decode `0x1a7`, ce qui donne `423` en decimal et on le donne en argument
+
+```
+level0@RainFall:~$ ./level0 423
+$ id                         
+uid=2030(level1) gid=2020(level0) groups=2030(level1),100(users),2020(level0)
+$ cat /home/user/level1/.pass
+1fe8a524fa4bec01ca4ea2a869af2a02260d4a7d5fe7e7c24d8617e6dca12d3a
+```
 
 > ### NEXT : [Level 1](/level1/resources/README.md)
