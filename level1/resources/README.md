@@ -43,7 +43,7 @@ Maintenant revenons sur le header qui se lance a chaque connexion, car tout ca e
 
 Ce fichier permet de controller l'activation et la desactivation de l'ASLR, un outils permettant de randomizer les addresses memoire pour rendre plus difficiles la comprehension du code et ainsi plus difficilemet savoir a quoi set `eip` mais qui est ici desactiver
 
-![file settings](headervl1.png)
+![file settings](headerlvl1.png)
 
 RELRO (Relocation Read-Only): est une protection de la relocation table aui permet de securiser les liaisons dynamiques, ici desactivee
 
