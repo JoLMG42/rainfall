@@ -1,5 +1,7 @@
 # **Rainfall**
 
+Ce projet est la suite de `snow-crash` qui dans la meme idee est un ctf
+
 Vous pouvez acceder aux explications de chaques niveau ci-dessous:
 
 ## _Mandatory_
