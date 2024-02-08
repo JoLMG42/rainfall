@@ -35,8 +35,9 @@ En temps normal tu descend ton pointeur `esp` suffisament pour que tout tes cara
 
 ![C'est les problemes](overflow2.png)
 
-De cette facon en continuant a ecrire tu peux remonter jusq'au contenue de `eip`, la prochaine instruction pour la remplacer.
+De cette facon en continuant a ecrire tu peux remonter jusqu'au contenue de `eip`, la prochaine instruction pour la remplacer.
 
+Maintenant revenons sur le header qui se lance a chaque connexion, 
 
 
 
