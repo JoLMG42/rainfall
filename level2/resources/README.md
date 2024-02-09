@@ -38,6 +38,7 @@ Pour ca on utilise comme point d'entree `gets` pour ecrire notre payload et `str
 Comme le buffer est assez grand, on peux ecrire notre `shellcode` dedans, donc on cherche un shellcode pour executer execve("/bin/sh")
 [ShellStorm](https://shell-storm.org/shellcode/index.html)
 [exploit-db](https://www.exploit-db.com/shellcodes)
+[HackNDo](https://beta.hackndo.com/buffer-overflow/)
 
 On comble le debut de notre payload par des `nop (\x90)` instruction qui permet de passer a la suivante
 
