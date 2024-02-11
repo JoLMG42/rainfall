@@ -21,8 +21,6 @@ void p(void)
   return;
 }
 
-
-
 void main(void)
 
 {
@@ -31,9 +29,9 @@ void main(void)
 }
 ```
 
-Le but de cet exercice est d'utiliser la heap (pas la stack car elle n'est pas executable ici) pour executer du code que nous allons lui passer en input
+Le but de cet exercice est d'utiliser la heap (pas la stack car la condition nous empeche de pointer epi sur la stack `(unaff_retaddr & 0xb0000000) == 0xb0000000`) pour executer du code que nous allons lui passer en input
 
-Pour ca on utilise comme point d'entree `gets` pour ecrire notre payload et `strdup` pour l'executer
+Pour ca on utilise comme point d'entree `gets` pour ecrire notre payload et le retour de `strdup` pour savoir ou pointer le debut d'execution
 
 Comme le buffer est assez grand, on peux ecrire notre `shellcode` dedans, donc on cherche un shellcode pour executer execve("/bin/sh")
 [ShellStorm](https://shell-storm.org/shellcode/index.html)
