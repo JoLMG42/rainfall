@@ -147,7 +147,7 @@ On regarde dans la heap ou se trouve notre string
 0x804a068:      0x41414141      0x41414141      0x41414141      0x41414141
 0x804a078:      0x45444342      0x00000000      0x00000000      0x00000000
 ```
-> On voit quel demarre a `0x0804a00c`
+> On voit qu'elle demarre a `0x0804a00c`
 
 On ecrit notre payload
 
